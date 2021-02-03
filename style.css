@@ -1,0 +1,109 @@
+body {
+  background-image: url(img/back-book.jpg);
+  background-repeat: round;
+  background-size: auto;
+}
+
+.page-content {
+  height: 100%;
+}
+
+#select-types {
+  width: 17%;
+  margin-right: 2%;
+  margin-left: 22%;
+}
+
+#search-btn {
+  cursor: pointer;
+}
+
+.page-content {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.content {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 45%;
+  height: 100%;
+  padding: 2rem;
+  background-color: #fff;
+  margin: 1rem auto;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+.card h1 {
+  font-size: 22px;
+  text-align: center;
+}
+
+.card h2 {
+  font-size: 15px;
+  text-align: center;
+  line-height: normal;
+}
+
+.inner-div p {
+  width: auto;
+  height: auto;
+}
+
+.inner-div {
+  display: flex;
+  justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  font-size: 18px;
+}
+/* O width em que começa a quebrar é 938px width */
+
+@media only screen and (max-width: 936px) {
+  .card {
+    width: 84%;
+  }
+
+  .inner-div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .inner-div a {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  #head-row {
+    display: flex;
+    flex-direction: column;
+    height: 25vh;
+    width: 85%;
+  }
+
+  #select-types {
+    width: 72%;
+    margin-right: 23%;
+  }
+}
